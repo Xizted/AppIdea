@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__inputs">
+        <div class="container__input">
+          <label for="input-binario">
+            Binario
+            <input
+              id="input-binario"
+              type="text"
+              maxlength="8"
+              pattern="{0,1}"
+              required
+              placeholder="100010001"
+          /></label>
+        </div>
+        <div class="container__input">
+          <label for="input-decimal">
+            Decimal
+            <input id="input-decimal" type="number" readonly placeholder="0"/>
+          </label>
+        </div>
+        <button type="button">Calcular</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
